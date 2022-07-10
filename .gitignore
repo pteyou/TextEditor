@@ -1,0 +1,6 @@
+bin/
+obj/
+packages/
+Properties/
+*.bkp
+.vs/

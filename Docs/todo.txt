@@ -1,0 +1,6 @@
+1) look for a better way to launch app with admin rights
+in order to be able to run powershell cmd
+see this post
+https://stackoverflow.com/questions/1313673/execute-powershell-as-an-administrator-from-c-sharp
+
+2) treat properly custom kwargs for the different scenari

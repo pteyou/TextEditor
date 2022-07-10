@@ -1,0 +1,14 @@
+{
+  "Conf": {
+    "PythonExecutablePath": "C:\\Users\\pat\\anaconda3\\python.exe",
+    "TextGenerationModelPath": "C:\\Users\\pat\\source\\PythonHF\\models\\gpt2XL_PT",
+    "BaseScript": "C:\\Users\\pat\\source\\PythonHF\\torch\\BaseScript.py"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Warning"
+    }
+  }
+}
