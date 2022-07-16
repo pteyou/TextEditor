@@ -13,7 +13,7 @@ input_key = "InputString"
 output_size_key = "OutputSize"
 output_field_key = "OutputField"
 HTTP_ERR_CODE = 400
-HTTP_SUCCESS_CODE = 400
+HTTP_SUCCESS_CODE = 200
 tol_length = 5
 
 

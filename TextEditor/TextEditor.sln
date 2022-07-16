@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PythonExecutor", "..\Python
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration", "..\Configuration\Configuration.csproj", "{E4BB6437-6D4B-4A2A-9760-06BEE854D542}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiClient", "..\WebApiClient\WebApiClient.csproj", "{73AF7D86-0C45-45C4-912C-4A6426B73021}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E4BB6437-6D4B-4A2A-9760-06BEE854D542}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4BB6437-6D4B-4A2A-9760-06BEE854D542}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4BB6437-6D4B-4A2A-9760-06BEE854D542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73AF7D86-0C45-45C4-912C-4A6426B73021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73AF7D86-0C45-45C4-912C-4A6426B73021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73AF7D86-0C45-45C4-912C-4A6426B73021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73AF7D86-0C45-45C4-912C-4A6426B73021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

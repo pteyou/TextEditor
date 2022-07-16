@@ -1,7 +1,7 @@
 {
   "Conf": {
     "PythonExecutablePath": "C:\\ProgramData\\Anaconda3\\python.exe",
-    "TextGenerationModelPath": "D:\\Transformers\\Models\\GPT2XL",
+    "TextGenerationModelPath": "./Models/GPT2",
     "BaseScript": "C:\\Users\\patri\\source\\TextEditor\\TextEditor\\PythonScripts\\BaseScript.py"
   },
   "Logging": {
