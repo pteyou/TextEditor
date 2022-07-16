@@ -183,7 +183,6 @@
   <ItemGroup>
     <Compile Include="Conf.cs" />
     <Compile Include="Host.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -191,6 +190,9 @@
     <None Include="settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\TextEditor\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\TextEditor\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

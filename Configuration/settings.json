@@ -1,8 +1,8 @@
 {
   "Conf": {
-    "PythonExecutablePath": "C:\\Users\\pat\\anaconda3\\python.exe",
-    "TextGenerationModelPath": "C:\\Users\\pat\\source\\PythonHF\\models\\gpt2XL_PT",
-    "BaseScript": "C:\\Users\\pat\\source\\PythonHF\\torch\\BaseScript.py"
+    "PythonExecutablePath": "C:\\ProgramData\\Anaconda3\\python.exe",
+    "TextGenerationModelPath": "D:\\Transformers\\Models\\GPT2XL",
+    "BaseScript": "C:\\Users\\patri\\source\\TextEditor\\TextEditor\\PythonScripts\\BaseScript.py"
   },
   "Logging": {
     "LogLevel": {

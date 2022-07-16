@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Configuration;
-using System.IO;
 using PythonExecutor;
-using TextEditor.Configuration;
 namespace TextEditor
 {
     class Program

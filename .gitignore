@@ -4,3 +4,6 @@ packages/
 Properties/
 *.bkp
 .vs/
+Models/
+.idea/
+__pycache__/

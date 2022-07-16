@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer, AutoModel
 
-model_to_download = 'gpt2-xl'
-target_path = r"C:\Users\pat\source\PythonHF\models\gpt2XL"
+model_to_download = 'gpt2'
+target_path = r"D:\Transformers\Models\GPT2"
 
 tokenizer = AutoTokenizer.from_pretrained(model_to_download)
 model = AutoModel.from_pretrained(model_to_download)

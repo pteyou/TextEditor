@@ -5,13 +5,12 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 def generate(model_path: str, task: str, input_str: str):
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForCausalLM.from_pretrained(model_path)
-    if 'gpt2' in model_path:
+    if 'GPT2' in model_path:
         # specific to GPT2
         model.config.pad_token_id = model.config.eos_token_id
 
     generator = pipeline(task=task, model=model, tokenizer=tokenizer)
-
-    print(generator(input_str, max_length=70))
+    print(generator(input_str, max_length=50))
 
 
 if __name__ == "__main__":
