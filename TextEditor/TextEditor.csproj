@@ -47,10 +47,6 @@
       <Project>{e4bb6437-6d4b-4a2a-9760-06bee854d542}</Project>
       <Name>Configuration</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PythonExecutor\PythonExecutor.csproj">
-      <Project>{FC06918C-D5A5-4FA7-9398-D2E4ED5717BD}</Project>
-      <Name>PythonExecutor</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
