@@ -2,7 +2,8 @@
 {
     public class Conf
     {
-        public string PythonExecutablePath { get; set; }
+        public string Hostname { get; set; }
+        public string Port { get; set; }
         public string TextGenerationModelPath { get; set; }
         public string BaseScript { get; set; }
     }

@@ -44,7 +44,6 @@ def run(model_path: str, task: str, input_str: str, output_field: str, **kwargs)
         model.config.pad_token_id = model.config.eos_token_id
 
     generator = pipeline(task=task, model=model, tokenizer=tokenizer, device=device.index)
-    print(kwargs)
     result = generator(input_str, **kwargs)
     return get_field(output_field, result[0])
 

@@ -1,8 +1,8 @@
 {
   "Conf": {
-    "PythonExecutablePath": "C:\\ProgramData\\Anaconda3\\python.exe",
-    "TextGenerationModelPath": "./Models/GPT2",
-    "BaseScript": "C:\\Users\\patri\\source\\TextEditor\\TextEditor\\PythonScripts\\BaseScript.py"
+    "Hostname": "localhost",
+    "Port": "8000",
+    "TextGenerationModelPath": "./Models/GPT2"
   },
   "Logging": {
     "LogLevel": {
