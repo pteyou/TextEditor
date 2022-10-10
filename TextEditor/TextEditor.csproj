@@ -55,6 +55,10 @@
       <Project>{3417ad12-dbbb-4ec6-b845-596de35db1a7}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WebApiClient\WebApiClient.csproj">
+      <Project>{73af7d86-0c45-45c4-912c-4a6426b73021}</Project>
+      <Name>WebApiClient</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

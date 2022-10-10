@@ -49,7 +49,7 @@ namespace WebApiClient
 
         public override string OutputField => "generated_text";
 
-        internal TextGenerationArguments(string inputString, int outputSize)
+        public TextGenerationArguments(string inputString, int outputSize)
         {
             InputString = inputString;
             OutputSize = outputSize;

@@ -12,14 +12,10 @@ namespace DataStructures
         TextGenerationCacheNode _Root;
         public TextGenerationCacheTree()
         {
-            _Root = null;
+            _Root = new TextGenerationCacheNode("Root");
         }
         public void AddPropositions(string wordList)
         {
-            if(_Root == null)
-            {
-                _Root = new TextGenerationCacheNode("Root");
-            }
             _Root.AddPropositions(wordList);
         }
 

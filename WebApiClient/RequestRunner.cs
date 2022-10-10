@@ -16,7 +16,7 @@ namespace WebApiClient
         private static string HostName { get; }
         private static string Port { get; }
         private static HttpClient client { get; }
-        private readonly Arguments _arguments;
+        private Arguments _arguments;
 
         static RequestRunner()
         {
@@ -26,9 +26,17 @@ namespace WebApiClient
             client = new HttpClient();
         }
 
-        public RequestRunner(Arguments args)
+        public RequestRunner(Arguments args = null)
         {
             _arguments = args;
+        }
+
+        public Arguments Args
+        {
+            set
+            {
+                _arguments = value;
+            }
         }
         public async Task<Response> ProcessRequest(bool get)
         {

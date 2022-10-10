@@ -1,5 +1,8 @@
 ﻿using DataStructures;
 using System;
+using System.Threading.Tasks;
+using WebApiClient;
+
 namespace TextEditor
 {
     class Program
@@ -21,6 +24,16 @@ namespace TextEditor
 
             Console.WriteLine("Entrer to quit");
             Console.ReadLine();
+        }
+        public static async Task Test()
+        {
+            var args = new TextGenerationArguments("Hello", 4);
+            Response r = await TextGeneration.Instance.Run(args);
+            Console.WriteLine($"status code : {r.StatusCode}");
+            if (r.Field != null)
+            {
+                Console.WriteLine($"Text : {r.Text}");
+            }
         }
     }
 }
