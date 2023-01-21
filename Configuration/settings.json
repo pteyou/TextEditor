@@ -2,7 +2,9 @@
   "Conf": {
     "Hostname": "localhost",
     "Port": "8000",
-    "TextGenerationModelPath": "./Models/GPT2"
+    "TextGenerationModelPath": "./Models/GPT2",
+    "MaxTextGenCacheSize": 100,
+    "MaxTextGenCacheWorkers": 10
   },
   "Logging": {
     "LogLevel": {

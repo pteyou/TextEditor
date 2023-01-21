@@ -22,11 +22,6 @@ namespace DataStructures
             Key = key;
             _Children = null;
         }
-        public TextGenerationCacheNode()
-        {
-            Key = string.Empty;
-            _Children = null;
-        }
         public override bool Equals(object obj)
         {
             return Key.Equals(((TextGenerationCacheNode)obj).Key);
