@@ -1,0 +1,8 @@
+{
+  "Conf": {
+    "Hostname": "localhost",
+    "GrpcCorePort": 50051,
+    "MaxTextGenCacheSize": 100,
+    "MaxTextGenCacheWorkers": 10
+  }
+}

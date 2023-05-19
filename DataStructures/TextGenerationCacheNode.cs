@@ -77,7 +77,7 @@ namespace DataStructures
                 {
                     foreach (var node in root.Children)
                     {
-                        var tmp = string.Copy(currentPath);
+                        var tmp = $"{currentPath}";
                         GetPropositionHelper(node, pathLen, maxWords, tmp, allPropositions,
                             filter, inputFilter, ++filterIndex);
                     }

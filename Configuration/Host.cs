@@ -1,12 +1,11 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
 
 namespace TextEditor.Configuration
 {
     public sealed class Hosting
     {
-        private static readonly Hosting instance = new Hosting();
+        private static readonly Hosting _instance = new Hosting();
         private static readonly Conf _configuration;
         static Hosting()
         {
@@ -27,22 +26,16 @@ namespace TextEditor.Configuration
 
         }
 
-        public static Hosting Instance => instance;
+        public static Hosting Instance => _instance;
 
         public Conf Config => _configuration;
+
         private static Conf LoadConfiguration()
         {
-            var options = new Conf();
-            IHost host = Host.CreateDefaultBuilder()
-                .ConfigureAppConfiguration((hostingContext, configuration) =>
-                {
-                    configuration.Sources.Clear();
-                    IHostEnvironment env = hostingContext.HostingEnvironment;
-                    configuration.AddJsonFile("settings.json", optional: false, reloadOnChange: true);
-                    IConfigurationRoot configurationRoot = configuration.Build();
-                    configurationRoot.GetSection(nameof(Conf)).Bind(options);
-                }).Build();
-            host.Start();
+            IConfiguration config = new ConfigurationBuilder()
+                .AddJsonFile("editorSettings.json", optional: false, reloadOnChange: true)
+                .Build();
+            var options = config.GetRequiredSection(nameof(Conf)).Get<Conf>();
             return options;
         }
     }

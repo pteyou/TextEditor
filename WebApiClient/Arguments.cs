@@ -11,14 +11,19 @@ namespace WebApiClient
     {
         [JsonIgnore]
         protected static Conf configuration = Hosting.Instance.Config;
+
         [JsonPropertyName("ModelPath")]
         public abstract string ModelPath { get; }
+
         [JsonPropertyName("Task")]
         public abstract string Task { get; }
+
         [JsonPropertyName("InputString")]
         public string InputString { get; set; }
+
         [JsonPropertyName("OutputField")]
         public abstract string OutputField { get; }
+        
         [JsonIgnore]
         public virtual string GetJsonPayload
         {
