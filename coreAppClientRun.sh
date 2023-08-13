@@ -1,0 +1,1 @@
+docker run --name coreclientappcontainer --rm coreclientapp:V1

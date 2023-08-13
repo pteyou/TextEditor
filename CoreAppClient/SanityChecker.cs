@@ -13,7 +13,6 @@ public class SanityChecker
 
     public static int timeoutInSeconds;
 
-    public static string FailureMessage = "Unable to connect to Core App";
     
     static SanityChecker()
     {
@@ -36,18 +35,6 @@ public class SanityChecker
                 Ok = true,
                 RequestTimeoutInSeconds = timeoutInSeconds
             }, deadline: DateTime.UtcNow.AddSeconds(timeoutInSeconds));
-        }
-        catch (RpcException ex) when (ex.StatusCode == StatusCode.DeadlineExceeded)
-        {
-            response = new CheckServiceReply {
-                Ok = false,
-                ServiceInfo = new BaseServiceInfo {
-                    CallDateTime =  Timestamp.FromDateTime(DateTime.Now.ToUniversalTime()),
-                    ServiceName = nameof(SanityChecker),
-                    Ok = false,
-                    StatusMessage = FailureMessage
-                }
-            };
         }
         catch (RpcException ex)
         {

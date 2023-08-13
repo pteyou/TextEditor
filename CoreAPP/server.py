@@ -3,7 +3,7 @@ from concurrent import futures
 import grpc
 import Protofiles.backend_pb2
 import Protofiles.backend_pb2_grpc
-import datetime
+
 
 class CheckServiceServicer(Protofiles.backend_pb2_grpc.CheckServiceServicer):
     def __init__(self):
