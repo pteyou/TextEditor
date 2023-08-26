@@ -1,7 +1,0 @@
-{
-    "ModelPath":  "D:\\Transformers\\Models\\GPT2",
-    "Task": "text-generation",
-    "InputString": "Hello i am starting a great journey for my new application development, it is quite exciting",
-    "OutputSize": 5,
-    "OutputField": "generated_text"
-}

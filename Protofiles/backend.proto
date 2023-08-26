@@ -31,9 +31,10 @@ message TextGenerationRequest {
     BaseServiceInfo ServiceInfo = 1;
     int32 RequiredExtraSize = 2;
     string InputText = 3;
+    int32 NumReturnedSequences = 4;
 }
 
 message TextGenerationReply {
     BaseServiceInfo ServiceInfo = 1;
-    string OuptutText = 2;
+    repeated string OuptutText = 2;
 }

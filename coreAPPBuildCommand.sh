@@ -1,0 +1,1 @@
+docker build -f CoreAPP.Dockerfile -t texteditorecore:v1 .

@@ -3,6 +3,8 @@
     "Hostname": "localhost",
     "GrpcCorePort": 50051,
     "MaxTextGenCacheSize": 100,
-    "MaxTextGenCacheWorkers": 10
+    "MaxTextGenCacheWorkers": 10,
+    "SanityCheckTimeoutInSeconds": 2,
+    "TextGeneratorTimeoutInSeconds": 30
   }
 }

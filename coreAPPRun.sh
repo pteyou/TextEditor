@@ -1,0 +1,1 @@
+docker run -p 50051:50051 --gpus all texteditorecore:v1

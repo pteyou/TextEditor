@@ -10,8 +10,7 @@ public class SanityChecker
 {
     private static string CoreHostname; 
     private static int GrpcCorePort;
-
-    public static int timeoutInSeconds;
+    private static int timeoutInSeconds;
 
     
     static SanityChecker()
@@ -19,7 +18,7 @@ public class SanityChecker
         var config = Hosting.Instance.Config;
         GrpcCorePort = config.GrpcCorePort;
         CoreHostname = config.Hostname;
-        timeoutInSeconds = 5;
+        timeoutInSeconds = config.SanityCheckTimeoutInSeconds;
     } 
 
     public static async Task<CheckServiceReply> Call()
